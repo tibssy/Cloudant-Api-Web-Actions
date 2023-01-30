@@ -6,7 +6,7 @@ from ibm_cloud_sdk_core import ApiException
 def main(param_dict):
     db_name = "reviews"
     keyword = "review"
-
+    print(param_dict['review'])
     try:
         authenticator = IAMAuthenticator(param_dict["IAM_API_KEY"])
         service = CloudantV1(authenticator=authenticator)
